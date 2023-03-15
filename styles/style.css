@@ -26,7 +26,12 @@ header a {
 article {
     display:flex;
 }
-
+.logo {
+    width:10vw;
+    display:block;
+    margin-right:auto;
+    padding:10px 10px;
+}
 .contaner {
     display:flex;
     margin:0 auto;
@@ -40,7 +45,7 @@ h1 {
     margin:0;
     padding:0;
 }
-/*サイドスクロール*/
+/*left*/
 .leftside a{
     border-radius:50px;
     border-top-left-radius:0;
@@ -58,20 +63,11 @@ h1 {
 .leftside a:hover{
     background-color:#ca3cff;
 }
-
 .leftside {
     width:13%;
     padding:0 20px 0 0;
 }
-.rightside {
-    width:20%;
-    padding:0 20px;
-
-}
-.rightside p,.rightside a,.rightside span {
-    font-size:1vw;
-    text-align: center;
-}
+/*center and right*/
 .main {
     width:80%;
     padding:auto;
@@ -84,11 +80,14 @@ h1 {
 .main h3 {
     text-align:center;
 }
-.logo {
-    width:10vw;
-    display:block;
-    margin-right:auto;
-    padding:10px 10px;
+.rightside {
+    width:20%;
+    padding:0 20px;
+
+}
+.rightside p,.rightside a,.rightside span {
+    font-size:1vw;
+    text-align: center;
 }
 .link a,.link i{
     text-align: left;
