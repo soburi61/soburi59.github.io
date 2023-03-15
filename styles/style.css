@@ -1,0 +1,102 @@
+html {
+    font-size:20px;
+    font-family:"Consolas","メイリオ";
+    color:white;
+    background-color:#000000;
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    background-color:#24292f;
+    padding:0;
+    border:0 solid #24292f;
+    min-height:100vh;
+}
+p {
+    color:white;
+}
+header {
+    background-color:#191d21
+}
+
+header a {
+    display:inline-block;
+}
+
+article {
+    display:flex;
+}
+
+.contaner {
+    display:flex;
+    margin:0 auto;
+}
+
+a:visited {
+    color:#3198ff;
+}
+h1 {
+    font-size:0;
+    margin:0;
+    padding:0;
+}
+/*サイドスクロール*/
+.leftside a{
+    border-radius:50px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    width:13vw;
+    color:white;
+    line-height:2;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:2.2vw;
+    display:inline-block;
+    padding:0 0 0 20px;
+}
+.leftside a:hover{
+    background-color:#ca3cff;
+}
+
+.leftside {
+    width:13%;
+    padding:0 20px 0 0;
+}
+.rightside {
+    width:20%;
+    padding:0 20px;
+
+}
+.rightside p,.rightside a,.rightside span {
+    font-size:1vw;
+    text-align: center;
+}
+.main {
+    width:80%;
+    padding:auto;
+    display:flex;
+}
+.main-content{
+    width:75%;
+    padding:auto;
+}
+.main h3 {
+    text-align:center;
+}
+.logo {
+    width:10vw;
+    display:block;
+    margin-right:auto;
+    padding:10px 10px;
+}
+.link a,.link i{
+    text-align: left;
+}
+.soburi {
+    width:10vw;
+    text-align: right;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
