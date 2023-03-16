@@ -152,10 +152,11 @@ h1 {
 }
 
 .qiita-post .tags .tag-name{
-    display:inline-block;
+    display:inline-block ;
     font-size:0.8vw;
     font-weight:lighter;
-    vertical-align:text-top;
+    position:relative;
+    z-index:1;
     padding-left:0.2em;
     padding-right:0.2em;
     color:#ffffff
