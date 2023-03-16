@@ -14,8 +14,14 @@ fetch(url, {
     data.forEach(post => {
       html += `
               <div class="qiita-post">
-                <a href="${post.url}"></a>
-                <a href="${post.url}">${post.title}</a>
+                <a class="qiita-link" href="${post.url}" target="_blank" rel="noopener noreferrer"></a>
+                <p>${post.title}</p>
+                <div class="tags">
+            `;
+      post.tags.forEach(function(tag) {
+        html+= `<a class="tag-name" href="https://qiita.com/tags/${tag.name}">`+ tag.name + '</a>';
+      });
+      html+=`   </div>
                 <div class="date">${post.created_at.slice(0, 10)}</div>
               </div>
             `;
