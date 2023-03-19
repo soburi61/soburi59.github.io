@@ -5,7 +5,7 @@ const userId = 'soburi06';
 const url = `https://qiita.com/api/v2/users/${userId}/items`;
 
 // 投稿一覧を表示する要素のIDを取得して、container定数に代入する
-const container = document.getElementById('qiita-posts');
+const container = document.getElementById('main-content');
 
 // fetch関数によってQiita APIからデータを取得
 fetch(url, {
@@ -24,6 +24,7 @@ fetch(url, {
     data.forEach(post => {
       // テンプレートリテラルを使ってHTMLの文字列を作成
       html += `
+              <div id="qiita-posts">
               <div class="qiita-post">
                 <a class="qiita-link" href="${post.url}" target="_blank" rel="noopener noreferrer"></a>
                 <p>${post.title}</p>
@@ -37,6 +38,7 @@ fetch(url, {
       
       html += `   </div>
                 <div class="date">${post.created_at.slice(0, 10)}</div>
+              </div>
               </div>
             `;
     });
