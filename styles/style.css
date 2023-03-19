@@ -53,7 +53,7 @@ article {
     padding: 0 0 0 20px;
 }
 .header-manu a:hover {
-    background-color: #ca3cff;
+    color: #73ff3c;
 }
 .contaner {
     display: flex;
