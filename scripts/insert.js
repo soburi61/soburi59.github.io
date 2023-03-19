@@ -9,4 +9,4 @@ fetch(url)
         return response.text();
     })
     .then((html) => mainContent.innerHTML = html)
-    .catch((error) => mainContent.innerHTML =  `<p>Could not fetch verse: ${error}`);
+    .catch((error) => mainContent.innerHTML =  `<p>Could not fetch verse: ${error}</p>`);
