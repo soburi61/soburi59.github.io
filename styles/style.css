@@ -37,24 +37,6 @@ article {
     margin-right: auto;
     padding: 10px 10px;
 }
-
-.contaner {
-    display: flex;
-    margin: 0 auto;
-}
-
-a {
-    color: #39dae6;
-}
-a:visited{
-    color:#3198ff;
-}
-h1 {
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-}
-
 /*header*/
 .header-manu{
     display:flex;
@@ -70,9 +52,24 @@ h1 {
     font-size: 2.2vw;
     padding: 0 0 0 20px;
 }
-
-.leftside a:hover {
+.header-manu a:hover {
     background-color: #ca3cff;
+}
+.contaner {
+    display: flex;
+    margin: 0 auto;
+}
+
+a {
+    color: #39dae6;
+}
+a:visited{
+    color:#3198ff;
+}
+h1 {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .leftside {
