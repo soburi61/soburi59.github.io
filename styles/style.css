@@ -1,3 +1,6 @@
+:root{
+    --hover-color:rgb(73, 235, 51);
+}
 html {
     font-size: 20px;
     font-family: "Consolas", "メイリオ";
@@ -14,9 +17,7 @@ body {
     min-height: 100vh;
 }
 
-p {
-    color: white;
-}
+
 
 header {
     background-color: #191d21;
@@ -27,12 +28,27 @@ article {
     display: flex;
 }
 
+a {
+    color: #39dae6;
+}
+
+a:visited{
+    color:#3198ff;
+}
+
+h1 {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     width: 10vw;
     display: block;
     margin-right: auto;
     padding: 10px 10px;
 }
+
 /*header*/
 .header-manu{
     margin-left:auto;
@@ -48,25 +64,14 @@ article {
     padding: 20px 20px;
 }
 .header-manu a:hover {
-    color: #73ff3c;
+    color: var(--hover-color);
 }
 .contaner {
     display: flex;
     margin: 0 auto;
 }
 
-a {
-    color: #39dae6;
-}
-a:visited{
-    color:#3198ff;
-}
-h1 {
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-}
-
+/*左*/
 .leftside {
     width: 13%;
     padding: 0 20px 0 0;
@@ -105,7 +110,9 @@ h1 {
     box-shadow:none;
     transition:0.2s;
     transform:translateX(0.3vw)translateY(0.3vw);
+    color:var(--hover-color);
 }
+
 .qiita-post .qiita-link{
     display: block;
     position: absolute;
@@ -117,14 +124,15 @@ h1 {
     margin:0;
 }
 
-.qiita-post p {
+.qiita-post .qiita-text{
     display: block;
     font-size: 1vw;
     font-weight: bold;
     margin:0;
-    color: #ffffff;
     text-decoration: none;
+    color:inherit;/*親要素から継承して色を変える*/
 }
+
 .qiita-post .tag{
     display:flex;
 }
@@ -155,11 +163,10 @@ h1 {
     color:#ffffff
 }
 .qiita-post .tags .tag-name:visited{
-    color:#d4d4d4
+    color:#d4d4d4;
 }
 .qiita-post .date {
     display:flex;
-
     font-size: 14px;
     color: #999;
     text-align:right;

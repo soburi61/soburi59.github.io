@@ -40,7 +40,7 @@ function showQiita(){
         html += `
                 <div class="qiita-post">
                     <a class="qiita-link" href="${post.url}" target="_blank" rel="noopener noreferrer"></a>
-                    <p>${post.title}</p>
+                    <a class="qiita-text">${post.title}</a>
                     <div class="tags">
                 `;
         
