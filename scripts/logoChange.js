@@ -17,3 +17,8 @@ myImage.addEventListener('mouseleave',function() {
       myImage.setAttribute('src','images/logo.png');
     }
 });
+
+window.addEventListener('popstate', function (e) {
+  window.location.reload();
+  console.log("Reload!");
+  });
