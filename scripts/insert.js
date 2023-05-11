@@ -63,3 +63,4 @@ function showQiita(){
     .catch(error => console.error(error));
 
 }
+showQiita();
